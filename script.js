@@ -85,3 +85,34 @@ window.addEventListener('scroll', () => {
     }
 
 });
+
+
+// MOBILE MENU
+
+const menuToggle =
+document.getElementById('menu-toggle');
+
+const mobileMenu =
+document.getElementById('mobile-menu');
+
+menuToggle.addEventListener('click', () => {
+
+    mobileMenu.classList.toggle('active');
+
+});
+
+
+// CLOSE MENU ON CLICK
+
+const mobileLinks =
+document.querySelectorAll('.mobile-menu a');
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        mobileMenu.classList.remove('active');
+
+    });
+
+});

@@ -90,20 +90,59 @@ img:hover{
 /* HEADER */
 
 header{
-    position:absolute;
+    position:fixed;
 
     top:0;
     left:0;
 
     width:100%;
 
-    padding:38px 7%;
+    padding:32px 7%;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    z-index:10;
+    z-index:1000;
+
+    transition:0.45s ease;
+}
+
+/* STICKY HEADER */
+
+header.sticky{
+    background:
+    rgba(5,5,5,0.88);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.05);
+
+    padding:24px 7%;
+}
+
+/* NAV */
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+
+    color:#F5F1E8;
+
+    font-size:0.78rem;
+
+    letter-spacing:2px;
+
+    transition:0.4s ease;
+}
+
+nav a:hover{
+    color:#C9A97D;
 }
 
 .logo{

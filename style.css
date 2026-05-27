@@ -29,6 +29,14 @@ img{
     display:block;
 }
 
+img{
+    transition:1.4s ease;
+}
+
+img:hover{
+    transform:scale(1.02);
+}
+
 /* HERO */
 
 .hero{
